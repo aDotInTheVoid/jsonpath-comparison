@@ -402,6 +402,7 @@ dependencies = [
  "jsonpath-plus",
  "jsonpath-rust",
  "jsonpath_lib",
+ "serde_json",
  "serde_json_path",
 ]
 
