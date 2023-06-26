@@ -16,7 +16,9 @@ pub struct Bezok<'q>(&'q str);
 mod impls {
     mod besok;
     mod craftspider;
+    mod freestrings;
     mod greyblake;
+    mod hiltontj;
     mod redis;
     mod zhxiaogg;
 }

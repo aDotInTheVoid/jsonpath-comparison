@@ -30,3 +30,13 @@ fn craftspider() {
 fn bezok() {
     smoke::<crate::Bezok>();
 }
+
+#[test]
+fn freestrings() {
+    smoke::<freestrings::Compiled>();
+}
+
+#[test]
+fn hiltontj() {
+    smoke::<hiltontj::JsonPath>();
+}
