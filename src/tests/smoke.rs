@@ -20,3 +20,8 @@ fn zhxiaogg() {
 fn greyblake() {
     smoke::<greyblake::Selector>();
 }
+
+#[test]
+fn craftspider() {
+    smoke::<craftspider::JsonPath>();
+}
