@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 zhxiaogg = { package = "json_path", version = "0.1.5" }
-jsonpath = "0.1.1"
+greyblake = { package = "jsonpath", version = "0.1.1" }
 jsonpath-plus = "0.1.9"
 jsonpath-rust = "0.3.0"
 jsonpath_lib = "0.3.0"

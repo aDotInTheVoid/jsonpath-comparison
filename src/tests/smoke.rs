@@ -15,3 +15,8 @@ fn redis() {
 fn zhxiaogg() {
     smoke::<crate::Zhxiaogg>();
 }
+
+#[test]
+fn greyblake() {
+    smoke::<greyblake::Selector>();
+}
