@@ -9,9 +9,13 @@ trait JsonPath<'q> {
     const NAME: &'static str;
 }
 
-pub struct Zhxiaogg(Vec<zhxiaogg::tokenizer::Token>);
-
 pub struct Bezok<'q>(&'q str);
+pub type Craftspider = craftspider::JsonPath;
+pub type Freestrings = freestrings::Compiled;
+pub type Greyblake = greyblake::Selector;
+pub type Hiltontj = hiltontj::JsonPath;
+pub type Redis<'q> = redis::json_path::Query<'q>;
+pub struct Zhxiaogg(Vec<zhxiaogg::tokenizer::Token>);
 
 mod impls {
     mod besok;
