@@ -11,7 +11,10 @@ trait JsonPath<'q> {
 
 pub struct Zhxiaogg(Vec<zhxiaogg::tokenizer::Token>);
 
+pub struct Bezok<'q>(&'q str);
+
 mod impls {
+    mod besok;
     mod craftspider;
     mod greyblake;
     mod redis;

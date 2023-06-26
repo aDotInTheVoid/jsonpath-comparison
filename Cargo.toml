@@ -9,7 +9,7 @@ edition = "2021"
 zhxiaogg = { package = "json_path", version = "0.1.5" }
 greyblake = { package = "jsonpath", version = "0.1.1" }
 craftspider = { package = "jsonpath-plus", version = "0.1.9" }
-jsonpath-rust = "0.3.0"
+besok = { package = "jsonpath-rust", version = "0.3.0" }
 jsonpath_lib = "0.3.0"
 serde_json = "1.0.99"
 serde_json_path = "0.6.0"

@@ -25,3 +25,8 @@ fn greyblake() {
 fn craftspider() {
     smoke::<craftspider::JsonPath>();
 }
+
+#[test]
+fn bezok() {
+    smoke::<crate::Bezok>();
+}
