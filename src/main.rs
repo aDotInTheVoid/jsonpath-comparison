@@ -9,8 +9,11 @@ trait JsonPath<'q> {
     const NAME: &'static str;
 }
 
+pub struct Zhxiaogg(Vec<zhxiaogg::tokenizer::Token>);
+
 mod impls {
     mod redis;
+    mod zhxiaogg;
 }
 
 #[cfg(test)]

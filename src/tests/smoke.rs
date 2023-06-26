@@ -2,18 +2,16 @@ use crate::JsonPath;
 use serde_json::json;
 
 fn smoke<'a, T: JsonPath<'a>>() {
-    let q = T::compile("$.a.b");
-    assert_eq!(
-        q.find(&json! ({
-            "a": {
-                "b": 1
-            }
-        })),
-        vec![&json!(1)]
-    )
+    super::check::<T>("$.a.b", json!({"a": {"b": 1}}), vec![&json!(1)]);
+    // check::<T>("$.a.*.b", json!({"a": [{"b": 1}, {"b": 2}]}), vec![]);
 }
 
 #[test]
 fn redis() {
-    smoke::<redis_json_path::json_path::Query>();
+    smoke::<redis::json_path::Query>();
+}
+
+#[test]
+fn zhxiaogg() {
+    smoke::<crate::Zhxiaogg>();
 }
